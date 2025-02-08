@@ -1,0 +1,159 @@
+.oie-enroll-ov-poll {
+  .ov-info {
+    li:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  .qrcode-container {
+    text-align: center;
+    .qrcode {
+      display: block;
+      margin: 0 auto;
+    }
+    margin-bottom: 15px;
+  }
+  .sms-info,
+  .email-info {
+    margin-bottom: 15px;
+  }
+  .qrcode-info {
+    list-style: decimal;
+    list-style-position: inside;
+  }
+
+  .sameDevice-info,
+  .deviceBootstrap-info {
+    list-style: decimal;
+    list-style-position: inside;
+
+    li:last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .sameDevice-setup {
+    text-align: center;
+  }
+
+  .sameDevice-setup ol {
+    list-style: none;
+  }
+
+  .sameDevice-setup .ov-info {
+    margin-bottom: 15px;
+  }
+
+  .sameDevice-setup .setup-button {
+    margin: 15px auto;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .sameDevice-setup .orOnMobileLink {
+    color: #007cc0;
+    text-decoration: none;
+  }
+
+  .app-store-logo {
+    display: block;
+    margin: 10px auto;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .android-app-store-logo {
+    background-image: url('../img/appstore/google-play-store.svg');
+  }
+
+  .ios-app-store-logo {
+    background-image: url('../img/appstore/apple-app-store.svg');
+    transform: scale(1.4);
+  }
+
+  .windows-app-store-logo {
+    background-image: url('../img/appstore/windows-app-store.svg');
+  }
+
+  .osx-app-store-logo {
+    background-image: url('../img/appstore/osx-app-store.svg');
+  }
+
+  .switch-channel-link {
+    color: $link-text-color;
+  }
+
+  .o-form-error-container > .infobox + .resend-ov-link-view {
+    // if error callout and warning callout show up on ov enroll screen, add margin between callouts
+    margin-top: 20px;
+  }
+
+  .copy-org-clipboard-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    height: 44px;
+    line-height: 44px;
+    width: 90%;
+    text-align: center;
+  }
+  .download-ov-link {
+    color: $primary-color;
+  }
+  .explanation {
+    margin-top: -12px;
+    margin-bottom: 12px;
+  }
+  .closing {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .semi-strong {
+    word-break: break-word;
+    font-weight: $font-weight-labels;
+  }
+}
+
+.oie-enroll-ov-data {
+  .country-code-label {
+    min-width: 3rem;
+    text-align: center;
+    vertical-align: middle;
+    // Padding top to align with phone number input text
+    padding: 0.125rem 0 0;
+  }
+  .switch-channel-text {
+    margin: -15px 0 20px;
+  }
+
+  .switch-channel-link {
+    color: $link-text-color;
+  }
+}
+
+.okta-verify-uv-callout-content {
+  margin-bottom: 15px;
+
+  ul {
+    list-style: inherit;
+    margin-left: 20px;
+  }
+}
+
+.okta-verify-send-push-form {
+  .o-form-button-bar {
+    padding-bottom: 10px;
+  }
+}
+
+.okta-verify-push-challenge {
+  .o-form-fieldset {
+    &:first-of-type {
+      margin-top: 10px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

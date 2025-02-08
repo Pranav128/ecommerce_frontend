@@ -1,0 +1,115 @@
+{
+  "hash": "a1f17912",
+  "configHash": "5d7d4226",
+  "lockfileHash": "ba3309e8",
+  "browserHash": "1c79a889",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "94493425",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "1b9d1e63",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "3b12c39a",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "dd57bf43",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "3ee4a0ae",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "37fa1081",
+      "needsInterop": false
+    },
+    "@ng-bootstrap/ng-bootstrap": {
+      "src": "../../../../../node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs",
+      "file": "@ng-bootstrap_ng-bootstrap.js",
+      "fileHash": "92a1cf0f",
+      "needsInterop": false
+    },
+    "@okta/okta-angular": {
+      "src": "../../../../../node_modules/@okta/okta-angular/fesm2015/okta-okta-angular.js",
+      "file": "@okta_okta-angular.js",
+      "fileHash": "4a1cc470",
+      "needsInterop": false
+    },
+    "@okta/okta-auth-js": {
+      "src": "../../../../../node_modules/@okta/okta-auth-js/esm/browser/exports/exports/default.js",
+      "file": "@okta_okta-auth-js.js",
+      "fileHash": "80682141",
+      "needsInterop": false
+    },
+    "@okta/okta-signin-widget": {
+      "src": "../../../../../node_modules/@okta/okta-signin-widget/dist/esm/src/exports/exports/default.js",
+      "file": "@okta_okta-signin-widget.js",
+      "fileHash": "5e83a04a",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "0f043c2c",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "125350ea",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-PP54XSQL": {
+      "file": "chunk-PP54XSQL.js"
+    },
+    "chunk-3STTMA3D": {
+      "file": "chunk-3STTMA3D.js"
+    },
+    "chunk-75UTT5YC": {
+      "file": "chunk-75UTT5YC.js"
+    },
+    "chunk-JFXEA5Y4": {
+      "file": "chunk-JFXEA5Y4.js"
+    },
+    "chunk-4T3K5RY2": {
+      "file": "chunk-4T3K5RY2.js"
+    },
+    "chunk-ZRBJQHN5": {
+      "file": "chunk-ZRBJQHN5.js"
+    },
+    "chunk-S2C2LCHH": {
+      "file": "chunk-S2C2LCHH.js"
+    },
+    "chunk-MOY5LPCH": {
+      "file": "chunk-MOY5LPCH.js"
+    },
+    "chunk-MJQNUHK2": {
+      "file": "chunk-MJQNUHK2.js"
+    },
+    "chunk-SAI3DHVA": {
+      "file": "chunk-SAI3DHVA.js"
+    },
+    "chunk-CPNXOV62": {
+      "file": "chunk-CPNXOV62.js"
+    }
+  }
+}

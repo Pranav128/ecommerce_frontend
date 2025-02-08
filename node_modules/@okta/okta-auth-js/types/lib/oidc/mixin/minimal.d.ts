@@ -1,0 +1,4 @@
+import { OktaAuthConstructor } from '../../base/types';
+import { OAuthStorageManagerInterface, OAuthTransactionMeta, MinimalOktaOAuthInterface, OktaAuthOAuthOptions, PKCETransactionMeta, TransactionManagerInterface, TransactionManagerConstructor } from '../types';
+import { OktaAuthSessionInterface } from '../../session/types';
+export declare function mixinMinimalOAuth<M extends OAuthTransactionMeta = PKCETransactionMeta, S extends OAuthStorageManagerInterface<M> = OAuthStorageManagerInterface<M>, O extends OktaAuthOAuthOptions = OktaAuthOAuthOptions, TM extends TransactionManagerInterface = TransactionManagerInterface, TBase extends OktaAuthConstructor<OktaAuthSessionInterface<S, O>> = OktaAuthConstructor<OktaAuthSessionInterface<S, O>>>(Base: TBase, TransactionManagerConstructor: TransactionManagerConstructor<TM>): TBase & OktaAuthConstructor<MinimalOktaOAuthInterface<M, S, O, TM>>;

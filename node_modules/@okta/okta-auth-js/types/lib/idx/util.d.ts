@@ -1,0 +1,22 @@
+import { RemediationValues, Remediator, RemediatorConstructor } from './remediators';
+import { OktaAuthIdxInterface, IdxFeature, NextStep, RemediateOptions, RemediationResponse, RunOptions, FlowIdentifier, FlowSpecification } from './types';
+import { IdxMessage, IdxRemediationValue, IdxResponse } from './types/idx-js';
+declare type GetFlowSpecification = (oktaAuth: OktaAuthIdxInterface, flow: FlowIdentifier) => FlowSpecification;
+declare const ctx: {
+    remediators: Record<string, RemediatorConstructor>;
+    getFlowSpecification: GetFlowSpecification;
+};
+export declare function setRemediatorsCtx(newCtx: Partial<typeof ctx>): void;
+export declare function getFlowSpecification(oktaAuth: OktaAuthIdxInterface, flow?: FlowIdentifier): FlowSpecification;
+export declare function isTerminalResponse(idxResponse: IdxResponse): boolean;
+export declare function canSkipFn(idxResponse: IdxResponse): boolean;
+export declare function canResendFn(idxResponse: IdxResponse): boolean;
+export declare function getMessagesFromIdxRemediationValue(value?: IdxRemediationValue[]): IdxMessage[] | undefined;
+export declare function getMessagesFromResponse(idxResponse: IdxResponse, options: RunOptions): IdxMessage[];
+export declare function getEnabledFeatures(idxResponse: IdxResponse): IdxFeature[];
+export declare function getAvailableSteps(authClient: OktaAuthIdxInterface, idxResponse: IdxResponse, useGenericRemediator?: boolean): NextStep[];
+export declare function filterValuesForRemediation(idxResponse: IdxResponse, remediationName: string, values: RemediationValues): RemediationValues;
+export declare function getRemediator(idxResponse: IdxResponse, values: RemediationValues, options: RemediateOptions): Remediator | undefined;
+export declare function getNextStep(authClient: OktaAuthIdxInterface, remediator: Remediator, idxResponse: IdxResponse): NextStep;
+export declare function handleFailedResponse(authClient: OktaAuthIdxInterface, idxResponse: IdxResponse, options?: {}): RemediationResponse;
+export {};

@@ -1,0 +1,31 @@
+import { loc } from '../../../../../packages/@okta/courage-dist/esm/src/CourageForSigninWidget.js';
+import '../../../../../packages/@okta/courage-dist/esm/src/courage/framework/Model.js';
+import '../../../../../packages/@okta/courage-dist/esm/src/courage/vendor/lib/backbone.js';
+import '../../../../../packages/@okta/courage-dist/esm/src/courage/util/jquery-wrapper.js';
+import '../../../../../packages/@okta/courage-dist/esm/src/courage/util/underscore-wrapper.js';
+import '../../../../../packages/@okta/courage-dist/esm/lib/handlebars/dist/cjs/handlebars.runtime.js';
+import '../../../../../packages/@okta/courage-dist/esm/src/courage/models/Model.js';
+import '../../../../../packages/@okta/courage-dist/esm/src/courage/models/BaseModel.js';
+import '../../../../../packages/@okta/courage-dist/esm/src/courage/framework/View.js';
+import '../../../../../packages/@okta/courage-dist/esm/src/courage/views/Backbone.ListView.js';
+import { BaseIdPAuthenticatorBody, BaseIdpAuthenticatorView } from './BaseIdpAuthenticator.js';
+
+const Body = BaseIdPAuthenticatorBody.extend({
+  title: function () {
+    const displayName = this.options.appState.getAuthenticatorDisplayName();
+    return loc('oie.idp.enroll.title', 'login', [displayName]);
+  },
+  subtitle: function () {
+    const displayName = this.options.appState.getAuthenticatorDisplayName();
+    return loc('oie.idp.enroll.description', 'login', [displayName]);
+  },
+  save: function () {
+    return loc('mfa.enroll', 'login');
+  }
+});
+var AuthenticatorIdPEnrollView = BaseIdpAuthenticatorView.extend({
+  Body: Body
+});
+
+export { AuthenticatorIdPEnrollView as default };
+//# sourceMappingURL=AuthenticatorIdPEnrollView.js.map
