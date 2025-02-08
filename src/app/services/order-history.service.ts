@@ -8,8 +8,8 @@ import { OrderHistory } from '../common/order-history';
   providedIn: 'root'
 })
 export class OrderHistoryService {
-
-  private orderUrl = environment.baseUrl + '/orders';
+  private baseUrl = environment.apiUrl;
+  private orderUrl = this.baseUrl + '/orders';
   constructor(private httpClient: HttpClient) { }
 
   getOrderHistory(theEmail: string): Observable<GetResponseOrderHistory> {

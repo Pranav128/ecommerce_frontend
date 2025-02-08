@@ -4,9 +4,8 @@
 
 export const environment = {
   production: false,
-  // baseUrl: "https://localhost:8080/api",
-  // baseUrl: "https://ecommerce-z5p2.onrender.com/api",
-  baseUrl: "https://ecommerce-rmhk.onrender.com/api",
+  apiUrl: 'http://localhost:8080/api',
+  // baseUrl: process.env['API_BASE_URL'] || "https://ecommerce-ftqv.onrender.com",
   stripePublishableKey: "<<ADD-YOUR-STRIPE-PUBLISHABLE-KEY>>"
 };
 

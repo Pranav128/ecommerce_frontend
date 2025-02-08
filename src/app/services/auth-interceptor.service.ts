@@ -8,15 +8,16 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class AuthInterceptorService implements HttpInterceptor {
-
+  private baseUrl=environment.apiUrl;
   constructor(private oktaAuth: OktaAuth) { }
+
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     return from(this.handleAccess(request, next));
   }
 
-  private async handleAccess(request: HttpRequest<any>, next: HttpHandler): Promise<HttpEvent<any>> { 
+  private async handleAccess(request: HttpRequest<any>, next: HttpHandler): Promise<HttpEvent<any>> {
     // Only add an access token for secured endpoints
-    const theEndpoint = environment.baseUrl + '/orders';
+    const theEndpoint = this.baseUrl + '/orders';
     const securedEndpoints = [theEndpoint];
     if (securedEndpoints.some(url => request.urlWithParams.includes(url))) {
       // get access token
